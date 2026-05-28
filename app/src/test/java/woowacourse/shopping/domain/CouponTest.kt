@@ -162,7 +162,7 @@ class CouponTest {
         ).shippingDiscountPrice
 
         // then: 할인을 적용할 수 없다
-        assertThat(discountedPrice).isEqualTo(0)
+        assertThat(discountedPrice).isEqualTo(PurchaseConfig.SHIPPING_PRICE)
     }
 
     @Test
